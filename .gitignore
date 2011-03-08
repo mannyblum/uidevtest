@@ -1,0 +1,13 @@
+# VIM
+*.swp
+.NERDTreeBookmarks
+
+# MAC OS X Finder
+.DS_Store
+Thumbs.db
+
+# Mercurial
+.hgignore
+.hg
+.svn
+CVS
