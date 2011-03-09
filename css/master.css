@@ -16,15 +16,29 @@ body {
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CCCCCC', endColorstr='#FFFFFF',GradientType=0 ); /* ie */
  }
 
- a {
-   color:#cc6600;
-   text-decoration:none;
- }
+a {
+  color:#cc6600;
+  text-decoration:none;
+  cursor:pointer;
+}
 
- a:hover {
-   color:#cc6600;
-   text-decoration:underline;
- }
+a:hover {
+  color:#cc6600;
+  text-decoration:underline;
+}
+
+a:active {
+  position:relative;
+  top:1px;
+}
+
+a:visited {
+  color:#cc6600;
+}
+
+.upper {
+  text-transform:uppercase;
+}
 
 #container {
   width:620px;
@@ -47,7 +61,6 @@ body {
 
 #breadcrumbs li a {
   color:#cc6600;
-  text-decoration:none;
   padding:0 5px 0 0;
 }
 
@@ -64,7 +77,6 @@ body {
 }
 
 .post h1 a {
-  text-decoration:none;
   color:#000;
 }
 
@@ -94,6 +106,90 @@ body {
   width:430px;
   float:right;
 }
+
+.content .author a {
+  font-weight:bold;
+}
+
+.content .author span {
+  display:block;
+  font-size:11px;
+  margin-bottom:15px;
+}
+
+.content .update {
+  font-size:13px;
+}
+
+.content .pubdate {
+  margin-bottom:10px;
+  font-size:13px;
+}
+
+.content .normaltext {
+  font-size:14px;
+}
+
+.content .largetext {
+  font-size:16px;
+}
+
+.entry p {
+  margin-bottom:10px;
+}
+
+.postmetadata {
+  margin:0;
+  padding:7px 0;
+  list-style-type:none;
+  border-top:1px dotted #000;
+  margin-bottom:10px;
+}
+
+.postmetadata li {
+  float:left;
+  font-size:11px;
+  line-height:14px;
+  padding-right:5px;
+}
+
+.postmetadata li a {
+  color:#000;
+  line-height:14px;
+  padding-right:5px;
+  padding-left:20px;
+  background:url('../images/sprites.gif') top left no-repeat;
+}
+
+.postmetadata li.comment a {
+  background-position:0 -480px;
+}
+
+.postmetadata li.email a {
+  background-position:0 -255px;
+}
+
+.postmetadata li.print a {
+  background-position:0 -300px;
+}
+
+.postmetadata li.share a {
+  background-position:0 -346px;
+}
+
+.postmetadata li.normal a {
+  background-position:0 -390px;
+}
+
+.postmetadata li.large a {
+  background-position:0 -435px;
+}
+
+.postmetadata li a:hover {
+  text-decoration:underline;
+}
+
+
 
 @media all and (orientation:portrait) { 
   /* Style adjustments for portrait mode goes here */
